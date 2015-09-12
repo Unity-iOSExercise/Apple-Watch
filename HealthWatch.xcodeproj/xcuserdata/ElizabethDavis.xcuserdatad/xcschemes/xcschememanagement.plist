@@ -4,10 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>HealthWatch WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>HealthWatch.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>Notification - HealthWatch WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>1B9A13191BA4181B004D748E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1B9A133A1BA41853004D748E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

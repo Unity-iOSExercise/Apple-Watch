@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Aln-8k-fKO">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="0ao-Wl-il5">
+            <objects>
+                <controller id="Aln-8k-fKO">
+                    <items>
+                        <label width="1" alignment="left" text="Welcome to Sweat to Safety" textAlignment="center" numberOfLines="2" id="qaq-GC-Tp6">
+                            <fontDescription key="font" type="system" weight="ultraLight" pointSize="19"/>
+                        </label>
+                        <separator alignment="left" id="3cm-Ay-Yhj">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </separator>
+                        <button width="100" height="101" alignment="center" title="Authorize HealthKit Data" id="nyg-It-zPw" userLabel="Authorize">
+                            <color key="backgroundColor" red="0.27928786700000002" green="0.91118213380000002" blue="0.73035995050000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="ultraLight" pointSize="17"/>
+                            <variation key="device=watch42mm" height="106" width="142"/>
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="push" id="NZm-q1-emb"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="3cm-Ay-Yhj"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="3cm-Ay-Yhj"/>
+                        </mask>
+                    </variation>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="145.58974358974359" y="182.64102564102566"/>
+        </scene>
+        <!--Game Step-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="Game Step" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HealthWatch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="Sweat to Safety" textAlignment="center" id="H3u-MP-I8R">
+                            <fontDescription key="font" type="system" weight="ultraLight" pointSize="23"/>
+                        </label>
+                        <button width="142" height="38" alignment="center" title="Do" id="ja4-PP-buN">
+                            <color key="backgroundColor" red="0.27928786704277692" green="0.91118213383838387" blue="0.73035995049287972" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="ultraLight" pointSize="15"/>
+                            <connections>
+                                <segue destination="FX3-mB-OTA" kind="push" id="7gr-ZH-RwC"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="PAL-Q1-D53">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </separator>
+                        <button width="142" height="38" alignment="center" title="Rest" id="r0t-8U-mFa">
+                            <color key="backgroundColor" red="0.27928786704277692" green="0.91118213383838387" blue="0.73035995049287972" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="ultraLight" pointSize="15"/>
+                            <connections>
+                                <segue destination="qw3-X2-Geg" kind="push" id="Uio-Rg-km6"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="xuH-Ce-cg6">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </separator>
+                        <button width="142" height="38" alignment="center" title="Pass" id="7m5-Of-HRM">
+                            <color key="backgroundColor" red="0.27928786704277692" green="0.91118213383838387" blue="0.73035995049287972" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="ultraLight" pointSize="15"/>
+                            <connections>
+                                <segue destination="jEJ-ey-5Du" kind="push" id="hNJ-B8-Y8W"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="PAL-Q1-D53"/>
+                            <exclude reference="xuH-Ce-cg6"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="PAL-Q1-D53"/>
+                            <include reference="xuH-Ce-cg6"/>
+                        </mask>
+                    </variation>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="146" y="440"/>
+        </scene>
+        <!--Do-->
+        <scene sceneID="DVy-MO-ZgB">
+            <objects>
+                <controller identifier="Do" id="FX3-mB-OTA">
+                    <items>
+                        <label width="1" alignment="center" text="LEVEL 1" textAlignment="center" id="7Br-yp-ZXX">
+                            <color key="textColor" red="0.27928786700000002" green="0.91118213380000002" blue="0.73035995050000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <variation key="device=watch42mm" text="LEVEL 1: JOGGING"/>
+                        </label>
+                        <group width="1" height="45" alignment="center" id="MCx-aI-14S">
+                            <items>
+                                <label width="100" height="50" alignment="left" verticalAlignment="center" text="142" minimumScaleFactor="0.90000000000000002" id="wh0-RI-kff">
+                                    <fontDescription key="font" type="system" pointSize="55"/>
+                                    <variation key="device=watch42mm" width="75"/>
+                                </label>
+                                <group width="100" height="50" alignment="center" layout="vertical" id="pvh-lm-N0m">
+                                    <items>
+                                        <label width="100" height="25" alignment="left" text="Label" id="Bjm-YK-wdT">
+                                            <fontDescription key="font" type="system" pointSize="20"/>
+                                            <variation key="device=watch42mm" height="18" text="BPM" width="48"/>
+                                        </label>
+                                        <imageView width="100" height="100" alignment="left" image="heart" id="PNa-tP-fGE">
+                                            <variation key="device=watch42mm" height="23" width="27"/>
+                                        </imageView>
+                                    </items>
+                                    <variation key="default">
+                                        <mask key="items">
+                                            <exclude reference="Bjm-YK-wdT"/>
+                                            <exclude reference="PNa-tP-fGE"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="device=watch42mm" width="48">
+                                        <mask key="items">
+                                            <include reference="Bjm-YK-wdT"/>
+                                            <include reference="PNa-tP-fGE"/>
+                                        </mask>
+                                    </variation>
+                                </group>
+                            </items>
+                            <variation key="default">
+                                <mask key="items">
+                                    <exclude reference="wh0-RI-kff"/>
+                                    <exclude reference="pvh-lm-N0m"/>
+                                </mask>
+                            </variation>
+                            <variation key="device=watch42mm">
+                                <mask key="items">
+                                    <include reference="wh0-RI-kff"/>
+                                    <include reference="pvh-lm-N0m"/>
+                                </mask>
+                            </variation>
+                        </group>
+                        <timer width="1" height="52" alignment="center" textAlignment="center" enabled="YES" previewedSeconds="600" id="r2I-XV-2Cv">
+                            <fontDescription key="font" type="system" weight="ultraLight" pointSize="49"/>
+                            <calendarUnit key="units" minute="YES" second="YES"/>
+                        </timer>
+                        <group width="100" height="100" alignment="left" id="7GY-Tz-Gdb">
+                            <items>
+                                <button width="50" alignment="center" title="Button" id="Vb1-kd-ffi">
+                                    <color key="backgroundColor" red="0.27928786700000002" green="0.91118213380000002" blue="0.73035995050000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <variation key="device=watch42mm" title="Pause" width="70"/>
+                                    <connections>
+                                        <segue destination="69t-eC-vqQ" kind="push" id="B0R-nN-C5J"/>
+                                    </connections>
+                                </button>
+                                <separator alignment="center" id="MiM-Fw-HOv">
+                                    <color key="color" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </separator>
+                                <button width="100" alignment="center" title="Skip" id="ND4-Yr-a7C">
+                                    <color key="backgroundColor" red="0.27928786700000002" green="0.91118213380000002" blue="0.73035995050000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <variation key="device=watch42mm" width="70"/>
+                                    <connections>
+                                        <segue destination="PPu-ai-xvB" kind="push" id="ls6-Dw-rrf"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <variation key="default">
+                                <mask key="items">
+                                    <exclude reference="Vb1-kd-ffi"/>
+                                    <exclude reference="MiM-Fw-HOv"/>
+                                    <exclude reference="ND4-Yr-a7C"/>
+                                </mask>
+                            </variation>
+                            <variation key="device=watch42mm" height="38" width="154">
+                                <mask key="items">
+                                    <include reference="Vb1-kd-ffi"/>
+                                    <include reference="MiM-Fw-HOv"/>
+                                    <include reference="ND4-Yr-a7C"/>
+                                </mask>
+                            </variation>
+                        </group>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="7Br-yp-ZXX"/>
+                            <exclude reference="MCx-aI-14S"/>
+                            <exclude reference="7GY-Tz-Gdb"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="7Br-yp-ZXX"/>
+                            <include reference="MCx-aI-14S"/>
+                            <include reference="7GY-Tz-Gdb"/>
+                        </mask>
+                    </variation>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="381.84615384615387" y="-69.307692307692307"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="Kk4-1i-y0v">
+            <objects>
+                <controller id="qw3-X2-Geg">
+                    <items>
+                        <label width="1" alignment="center" text="LEVEL 1" textAlignment="center" id="NZ5-37-gh4">
+                            <color key="textColor" red="0.27928786700000002" green="0.91118213380000002" blue="0.73035995050000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <variation key="device=watch42mm" text="LEVEL 1: JOGGING"/>
+                        </label>
+                        <timer width="1" alignment="left" textAlignment="center" enabled="YES" id="9XR-EQ-yDC">
+                            <fontDescription key="font" type="system" weight="ultraLight" pointSize="66"/>
+                            <calendarUnit key="units" minute="YES" second="YES"/>
+                        </timer>
+                        <button width="100" height="100" alignment="center" title="Button" id="6hD-yU-9QZ">
+                            <color key="backgroundColor" red="0.27928786700000002" green="0.91118213380000002" blue="0.73035995050000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="ultraLight" pointSize="15"/>
+                            <variation key="device=watch42mm" height="57" title="GO" width="141"/>
+                            <connections>
+                                <segue destination="FX3-mB-OTA" kind="push" id="rXi-dX-jDZ"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="NZ5-37-gh4"/>
+                            <exclude reference="9XR-EQ-yDC"/>
+                            <exclude reference="6hD-yU-9QZ"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="NZ5-37-gh4"/>
+                            <include reference="9XR-EQ-yDC"/>
+                            <include reference="6hD-yU-9QZ"/>
+                        </mask>
+                    </variation>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="381.84615384615387" y="182.64102564102566"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="GKh-C8-arl">
+            <objects>
+                <controller id="jEJ-ey-5Du">
+                    <items>
+                        <label width="1" height="100" alignment="center" text="LEVEL 1" textAlignment="center" numberOfLines="2" id="64o-h5-gTl">
+                            <color key="textColor" red="0.27928786700000002" green="0.91118213380000002" blue="0.73035995050000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="ultraLight" pointSize="39"/>
+                            <variation key="device=watch42mm" height="113" text="SKIP LEVEL 1?"/>
+                        </label>
+                        <separator alignment="left" id="OuM-SQ-ezl">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </separator>
+                        <group width="1" alignment="left" id="pOo-xz-m2L">
+                            <items>
+                                <button width="50" alignment="center" title="Button" id="fhH-sp-E6r">
+                                    <color key="backgroundColor" red="0.27928786700000002" green="0.91118213380000002" blue="0.73035995050000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="ultraLight" pointSize="15"/>
+                                    <variation key="device=watch42mm" title="YES" width="69"/>
+                                    <connections>
+                                        <segue destination="PPu-ai-xvB" kind="push" id="Tmq-s8-kwr"/>
+                                    </connections>
+                                </button>
+                                <separator alignment="center" id="gmZ-gC-vlW">
+                                    <color key="color" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </separator>
+                                <button width="100" alignment="center" title="Skip" id="Xy7-E0-Ovs">
+                                    <color key="backgroundColor" red="0.27928786700000002" green="0.91118213380000002" blue="0.73035995050000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="ultraLight" pointSize="15"/>
+                                    <variation key="device=watch42mm" title="NO" width="69"/>
+                                </button>
+                            </items>
+                            <variation key="default">
+                                <mask key="items">
+                                    <exclude reference="fhH-sp-E6r"/>
+                                    <exclude reference="gmZ-gC-vlW"/>
+                                    <exclude reference="Xy7-E0-Ovs"/>
+                                </mask>
+                            </variation>
+                            <variation key="device=watch42mm">
+                                <mask key="items">
+                                    <include reference="fhH-sp-E6r"/>
+                                    <include reference="gmZ-gC-vlW"/>
+                                    <include reference="Xy7-E0-Ovs"/>
+                                </mask>
+                            </variation>
+                        </group>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="64o-h5-gTl"/>
+                            <exclude reference="OuM-SQ-ezl"/>
+                            <exclude reference="pOo-xz-m2L"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="64o-h5-gTl"/>
+                            <include reference="OuM-SQ-ezl"/>
+                            <include reference="pOo-xz-m2L"/>
+                        </mask>
+                    </variation>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="381.84615384615387" y="409.30769230769232"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="HealthWatch_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="nXz-PT-v0T">
+            <objects>
+                <controller id="PPu-ai-xvB">
+                    <items>
+                        <label width="1" height="100" alignment="center" text="LEVEL 1" textAlignment="center" numberOfLines="2" id="OB9-Yt-SX3">
+                            <color key="textColor" red="0.27928786700000002" green="0.91118213380000002" blue="0.73035995050000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="ultraLight" pointSize="29"/>
+                            <variation key="device=watch42mm" height="104" text="LEVEL 1 SKIPPED"/>
+                        </label>
+                        <button width="100" height="100" alignment="center" title="Button" id="TIc-ZD-lpN">
+                            <color key="backgroundColor" red="0.27928786700000002" green="0.91118213380000002" blue="0.73035995050000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="ultraLight" pointSize="15"/>
+                            <variation key="device=watch42mm" height="57" title="Continue" width="141"/>
+                        </button>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="OB9-Yt-SX3"/>
+                            <exclude reference="TIc-ZD-lpN"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="OB9-Yt-SX3"/>
+                            <include reference="TIc-ZD-lpN"/>
+                        </mask>
+                    </variation>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="623.33333333333337" y="439.82051282051287"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="kUB-gP-Iwb">
+            <objects>
+                <controller id="69t-eC-vqQ">
+                    <items>
+                        <label width="1" height="100" alignment="center" text="LEVEL 1" textAlignment="center" numberOfLines="2" id="Tcl-1j-I3R">
+                            <color key="textColor" red="0.27928786700000002" green="0.91118213380000002" blue="0.73035995050000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="ultraLight" pointSize="29"/>
+                            <variation key="device=watch42mm" height="71" text="LEVEL 1 COMPLETE"/>
+                        </label>
+                        <label width="1" height="100" alignment="left" text="Label" textAlignment="center" numberOfLines="2" id="TvQ-J4-ukN">
+                            <fontDescription key="font" type="system" weight="ultraLight" pointSize="33"/>
+                            <variation key="device=watch42mm" height="54" text="100 XP"/>
+                        </label>
+                        <button width="100" height="100" alignment="center" title="Button" id="Kbw-M3-nfI">
+                            <color key="backgroundColor" red="0.27928786700000002" green="0.91118213380000002" blue="0.73035995050000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                            <variation key="device=watch42mm" height="28" title="Continue" width="141"/>
+                        </button>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="Tcl-1j-I3R"/>
+                            <exclude reference="TvQ-J4-ukN"/>
+                            <exclude reference="Kbw-M3-nfI"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="Tcl-1j-I3R"/>
+                            <include reference="TvQ-J4-ukN"/>
+                            <include reference="Kbw-M3-nfI"/>
+                        </mask>
+                    </variation>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="623.33333333333337" y="-69.307692307692307"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="rXi-dX-jDZ"/>
+        <segue reference="ls6-Dw-rrf"/>
+    </inferredMetricsTieBreakers>
+</document>

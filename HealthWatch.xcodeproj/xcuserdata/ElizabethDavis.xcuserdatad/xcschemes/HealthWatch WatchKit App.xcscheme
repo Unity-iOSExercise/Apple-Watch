@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1B9A133A1BA41853004D748E"
+               BuildableName = "HealthWatch WatchKit App.app"
+               BlueprintName = "HealthWatch WatchKit App"
+               ReferencedContainer = "container:HealthWatch.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "1B9A13041BA4181B004D748E"
                BuildableName = "HealthWatch.app"
                BlueprintName = "HealthWatch"
@@ -23,14 +37,14 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1B9A13191BA4181B004D748E"
-               BuildableName = "HealthWatchTests.xctest"
-               BlueprintName = "HealthWatchTests"
+               BlueprintIdentifier = "1B9A132D1BA41853004D748E"
+               BuildableName = "HealthWatch WatchKit Extension.appex"
+               BlueprintName = "HealthWatch WatchKit Extension"
                ReferencedContainer = "container:HealthWatch.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,23 +56,13 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1B9A13191BA4181B004D748E"
-               BuildableName = "HealthWatchTests.xctest"
-               BlueprintName = "HealthWatchTests"
-               ReferencedContainer = "container:HealthWatch.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1B9A13041BA4181B004D748E"
-            BuildableName = "HealthWatch.app"
-            BlueprintName = "HealthWatch"
+            BlueprintIdentifier = "1B9A133A1BA41853004D748E"
+            BuildableName = "HealthWatch WatchKit App.app"
+            BlueprintName = "HealthWatch WatchKit App"
             ReferencedContainer = "container:HealthWatch.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -72,16 +76,27 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/HealthWatch">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1B9A13041BA4181B004D748E"
-            BuildableName = "HealthWatch.app"
-            BlueprintName = "HealthWatch"
+            BlueprintIdentifier = "1B9A133A1BA41853004D748E"
+            BuildableName = "HealthWatch WatchKit App.app"
+            BlueprintName = "HealthWatch WatchKit App"
             ReferencedContainer = "container:HealthWatch.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1B9A133A1BA41853004D748E"
+            BuildableName = "HealthWatch WatchKit App.app"
+            BlueprintName = "HealthWatch WatchKit App"
+            ReferencedContainer = "container:HealthWatch.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -91,16 +106,27 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/HealthWatch">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1B9A13041BA4181B004D748E"
-            BuildableName = "HealthWatch.app"
-            BlueprintName = "HealthWatch"
+            BlueprintIdentifier = "1B9A133A1BA41853004D748E"
+            BuildableName = "HealthWatch WatchKit App.app"
+            BlueprintName = "HealthWatch WatchKit App"
             ReferencedContainer = "container:HealthWatch.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1B9A133A1BA41853004D748E"
+            BuildableName = "HealthWatch WatchKit App.app"
+            BlueprintName = "HealthWatch WatchKit App"
+            ReferencedContainer = "container:HealthWatch.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
