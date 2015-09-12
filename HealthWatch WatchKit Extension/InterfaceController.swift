@@ -8,6 +8,7 @@
 
 import HealthKit
 import WatchKit
+import Firebase
 import Foundation
 
 

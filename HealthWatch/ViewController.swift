@@ -10,23 +10,36 @@ import Foundation
 
 import HealthKit
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        
-        super.viewDidLoad()
-
-        
-        // Authorize health data
-        let healthStore: HKHealthStore? = {
-            if HKHealthStore.isHealthDataAvailable() {
-                return HKHealthStore()
-            } else {
-                return nil
-            }
+    
+    // Create a reference to a Firebase location
+    var myRootRef = Firebase(url:"https://sweat-to-safety.firebaseio.com/")
+    var healthStore: HKHealthStore? = {
+        if HKHealthStore.isHealthDataAvailable() {
+            return HKHealthStore()
+        } else {
+            return nil
+        }
         }()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        println(healthStore!)
+        authorizeHealthData()
+        monitorHeartRate()
+        println(healthStore!)
+    }
+    
+    // Dispose of any resources that can be recreated.
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
         
+    }
+    
+    // Authorize health data
+    func authorizeHealthData() {
         let quantityTypesUsedInApp : NSArray = [HKQuantityTypeIdentifierBodyMass,
             HKQuantityTypeIdentifierHeight,
             HKQuantityTypeIdentifierBodyMassIndex,
@@ -51,8 +64,11 @@ class ViewController: UIViewController {
                 NSLog("Failed to authorize: \(error.description)")
             }
         }
-        
-        // Set up heart rate observer.
+    }
+    
+    
+    // Set up heart rate observer.
+    func monitorHeartRate() {
         let heartRateType =
         HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeartRate)
         
@@ -67,17 +83,12 @@ class ViewController: UIViewController {
             self.updateHeartRate()
             completionHandler()
         }
-        
         healthStore!.executeQuery(query)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
+    // Write data to Firebase
     func updateHeartRate() {
-    
+        self.myRootRef.setValue("Do you have data? You'll love Firebase.")
     }
 
 }

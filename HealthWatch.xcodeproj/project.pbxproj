@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B3D46581BA4CDD3006A504D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3D46551BA4CDD3006A504D /* FBSDKCoreKit.framework */; };
+		1B3D46591BA4CDD3006A504D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3D46551BA4CDD3006A504D /* FBSDKCoreKit.framework */; };
+		1B3D465A1BA4CDD3006A504D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3D46561BA4CDD3006A504D /* FBSDKLoginKit.framework */; };
+		1B3D465B1BA4CDD3006A504D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3D46561BA4CDD3006A504D /* FBSDKLoginKit.framework */; };
+		1B3D465C1BA4CDD3006A504D /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3D46571BA4CDD3006A504D /* FBSDKShareKit.framework */; };
+		1B3D465D1BA4CDD3006A504D /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3D46571BA4CDD3006A504D /* FBSDKShareKit.framework */; };
 		1B4BDE0C1BA48D7E0054C658 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4BDE0B1BA48D7E0054C658 /* HealthKit.framework */; };
 		1B9A130B1BA4181B004D748E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A130A1BA4181B004D748E /* AppDelegate.swift */; };
 		1B9A130D1BA4181B004D748E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A130C1BA4181B004D748E /* ViewController.swift */; };
@@ -22,6 +28,8 @@
 		1B9A13461BA41853004D748E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B9A13451BA41853004D748E /* Images.xcassets */; };
 		1B9A13491BA41853004D748E /* HealthWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1B9A132E1BA41853004D748E /* HealthWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1BB8324C1BA45D9F00E3C318 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A13331BA41853004D748E /* InterfaceController.swift */; };
+		1C286E32E5B69EB2594EE9C5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 160088D451C7B62EAA00367A /* libPods.a */; };
+		1F80E937695C6E8C86563FB7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 160088D451C7B62EAA00367A /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +71,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		160088D451C7B62EAA00367A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B3D46551BA4CDD3006A504D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../Downloads/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		1B3D46561BA4CDD3006A504D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../Downloads/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		1B3D46571BA4CDD3006A504D /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../Downloads/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		1B4BDE0A1BA48D7E0054C658 /* HealthWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HealthWatch.entitlements; sourceTree = "<group>"; };
 		1B4BDE0B1BA48D7E0054C658 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		1B9A13051BA4181B004D748E /* HealthWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +97,8 @@
 		1B9A13411BA41853004D748E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B9A13431BA41853004D748E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		1B9A13451BA41853004D748E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B011570B5DEAA056194E2FD2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BCDA9F2B6E7C9C770EAA10CB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +107,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B4BDE0C1BA48D7E0054C658 /* HealthKit.framework in Frameworks */,
+				1B3D46581BA4CDD3006A504D /* FBSDKCoreKit.framework in Frameworks */,
+				1B3D465C1BA4CDD3006A504D /* FBSDKShareKit.framework in Frameworks */,
+				1B3D465A1BA4CDD3006A504D /* FBSDKLoginKit.framework in Frameworks */,
+				1C286E32E5B69EB2594EE9C5 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +125,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B3D465B1BA4CDD3006A504D /* FBSDKLoginKit.framework in Frameworks */,
+				1B3D46591BA4CDD3006A504D /* FBSDKCoreKit.framework in Frameworks */,
+				1B3D465D1BA4CDD3006A504D /* FBSDKShareKit.framework in Frameworks */,
+				1F80E937695C6E8C86563FB7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +144,8 @@
 				1B9A132F1BA41853004D748E /* HealthWatch WatchKit Extension */,
 				1B9A133F1BA41853004D748E /* HealthWatch WatchKit App */,
 				1B9A13061BA4181B004D748E /* Products */,
+				A8AA2DF59ECBDB4DFA6361D2 /* Pods */,
+				F63222AE73CFE2A09CC847EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -213,6 +237,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A8AA2DF59ECBDB4DFA6361D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B011570B5DEAA056194E2FD2 /* Pods.debug.xcconfig */,
+				BCDA9F2B6E7C9C770EAA10CB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F63222AE73CFE2A09CC847EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B3D46551BA4CDD3006A504D /* FBSDKCoreKit.framework */,
+				1B3D46561BA4CDD3006A504D /* FBSDKLoginKit.framework */,
+				1B3D46571BA4CDD3006A504D /* FBSDKShareKit.framework */,
+				160088D451C7B62EAA00367A /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -220,10 +264,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B9A13241BA4181B004D748E /* Build configuration list for PBXNativeTarget "HealthWatch" */;
 			buildPhases = (
+				81A2AF5D88BC72C31DFEA036 /* Check Pods Manifest.lock */,
 				1B9A13011BA4181B004D748E /* Sources */,
 				1B9A13021BA4181B004D748E /* Frameworks */,
 				1B9A13031BA4181B004D748E /* Resources */,
 				1B9A13501BA41853004D748E /* Embed App Extensions */,
+				699D33900FA5CB0082261DF9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,9 +303,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B9A134D1BA41853004D748E /* Build configuration list for PBXNativeTarget "HealthWatch WatchKit Extension" */;
 			buildPhases = (
+				0DC29028657264E3765DE730 /* Check Pods Manifest.lock */,
 				1B9A132A1BA41853004D748E /* Sources */,
 				1B9A132B1BA41853004D748E /* Frameworks */,
 				1B9A132C1BA41853004D748E /* Resources */,
+				C63EE30756DF514BC4B18352 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -374,6 +422,69 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DC29028657264E3765DE730 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		699D33900FA5CB0082261DF9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81A2AF5D88BC72C31DFEA036 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C63EE30756DF514BC4B18352 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1B9A13011BA4181B004D748E /* Sources */ = {
@@ -536,11 +647,16 @@
 		};
 		1B9A13251BA4181B004D748E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B011570B5DEAA056194E2FD2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HealthWatch/HealthWatch.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ElizabethDavis/Downloads,
+				);
 				INFOPLIST_FILE = HealthWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -550,11 +666,16 @@
 		};
 		1B9A13261BA4181B004D748E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCDA9F2B6E7C9C770EAA10CB /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HealthWatch/HealthWatch.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ElizabethDavis/Downloads,
+				);
 				INFOPLIST_FILE = HealthWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -637,7 +758,12 @@
 		};
 		1B9A134E1BA41853004D748E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B011570B5DEAA056194E2FD2 /* Pods.debug.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ElizabethDavis/Downloads,
+				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -651,7 +777,12 @@
 		};
 		1B9A134F1BA41853004D748E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCDA9F2B6E7C9C770EAA10CB /* Pods.release.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ElizabethDavis/Downloads,
+				);
 				INFOPLIST_FILE = "HealthWatch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
